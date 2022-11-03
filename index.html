@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="nav.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="nav_wrapper">
+            <section class="nav_sect container">
+                <div class="logo">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="181" height="48" viewBox="0 0 181 48">
+                        <image id="paintbrush" width="181" height="48" xlink:href="data:img/png;base64,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"/>
+                    </svg>                  
+                </div>
+                <nav class="main_nav">
+                    <ul class="nav_list">
+                        <li class="nav_item"><a href="#">Главная</a></li>
+                        <li class="nav_item"><a href="#">О нас</a></li>
+                        <li class="nav_item"><a href="#">Услуги</a></li>
+                        <li class="nav_item"><a href="#">Портфолио</a></li>
+                        <li class="nav_item"><a href="#">Контакты</a></li>
+                 
+                    </ul>
+                </nav>
+                <div class="phone">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" height="16" viewBox="0 0 16 16">
+                        <image id="_1485630910_phone8" data-name="1485630910_phone8" width="16" height="16" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAA00lEQVQ4jZWTPQoCMRCFB0sLsbKwFSzVwsJKewsvYeNPIQv2Vh7Di4gggoh4AlsrFcFChLX7JJCFGLLrzoMMwyRv5mUyEUCzisAOuAGRiWkTHPlFpCFPCKAg+dEMxD4aBVXg7Ak4aHvQ8BKMNVcwGDh+LCIrTfWOV32oecYaEDvkfbKXh1wHng75BZRCCUbAEig7sR7w9qS33AJis22dAxegDywCc9P1FRpzCk2YhwfQDl3RmH9YA5W0HhkzSyFe7fxnNjlx5sDdSt0AU/t1s18I5AuplusDEHMcxwAAAABJRU5ErkJggg=="/>
+                    </svg>
+                    <p>8 800 800 80 80</p>
+                </div>
+            </section>
+        </div>
+        <div class="container">
+            <section class="form_sect">
+                <div class="header_h1">
+                    <div>
+                       <h1><span>РЕМОНТ КВАРТИР</span><br>
+                        <em>В КИЕВЕ И ОБЛАСТИ</em><h1>
+                        <p>от 1699 ГРН/М2</p>
+                    </div>
+                    <a href="#">Подробнее</a>
+                </div>
+                <div class="calc_form">
+                    <form action="/login" method="post">
+                        <p>ПРОСЧИТАТЬ РЕМОНТ</p>
+                        <div class="inputs">
+                            <input class="form f_name" type="text" placeholder="Имя">
+                            <input class="form f_phone" type="text" placeholder="Телефон">
+                            <input class="form also_black_butt" type="button" name="name" value="Отправить">
+                        </div>
+                    </form>
+                </div>
+            </section>
+        </div>
+    </header>
+    <main>
+        <section class="about_wrapper">
+            <div class="about container">
+                <div class="about_info">
+                    
+                    <h2 class="h2_border">о компании</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt<br> 
+                        ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation<br> 
+                        ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in<br> 
+                        reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.<br>
+                        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit<br> 
+                        anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem<br> 
+                        accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab i
+                    </p>
+                </div>
+                <div class="about_img">
+                    <img src="img/drel.png" alt="">
+                    <div class="img_wrapp"></div>
+                </div>
+            </div>
+        </section>
+        <section class="achivements_wrapper">
+            <div class="about_achivements container">
+                <div class="white_border">
+                    <strong>9</strong>
+                    <p>лет успешной<br>
+                    работы</p>
+                </div>
+                <div class="white_border">
+                    <strong>250</strong>
+                    <p>сделаных<br>
+                        обьектов</p>
+                </div>
+                <div class="white_border">
+                    <strong>56</strong>
+                    <p>опытных<br> 
+                        специалистов
+                    </p>
+                </div>
+                <div class="white_border">
+                    <strong>10</strong>
+                    <p>иностранных<br>
+                        проектов</p>
+                </div>
+            </div>
+        </section>
+        <section class="prise_wrapper">
+            <div class="prise container">
+                
+                <h2 class="h2_border">наши услуги</h2>
+                <div class="prise_item_wrapp">
+                    <div class="prise_item">
+                        <div>
+                            <h3>Косметический ремонт</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt<br> 
+                                ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris<br> 
+                                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in</p>
+                            <p class="coin">от 700 грн/м2</p>
+                            <a class="also_black_butt" href="#">Заказать</a>
+                        </div>
+                        <div class="prise_img">
+                            <div class="img_wrapp"></div>
+                            <img src="img/1price.png" alt="">
+                        </div>
+                    </div>
+                    <div class="prise_item">
+                        <div>
+                            <h3>Капитальный ремонт</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt<br> 
+                                ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris<br> 
+                                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in</p>
+                            <p class="coin">от 1200 грн/м2</p>
+                            <a class="also_black_butt" href="#">Заказать</a>
+                        </div>
+                        <div class="prise_img">
+                            <div class="img_wrapp"></div>
+                            <img src="img/2price.png" alt="">
+                        </div>
+                    </div>
+                    <div class="prise_item">
+                        <div>
+                            <h3>Премиум ремонт</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt<br> 
+                                ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris<br> 
+                                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in</p>
+                            <p class="coin">от 1700 грн/м2</p>
+                            <a class="also_black_butt" href="#">Заказать</a>
+                        </div>
+                        <div class="prise_img">
+                            <div class="img_wrapp"></div>
+                            <img src="img/3price.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="portfolio_wrapp">
+            <div class="portfolio container">
+                <h2 class="h2_border">портфолио</h2>
+                <div class="portfolio_item_wrapp">
+                    <div class="portfolio_item">
+                        <img src="img/port1.png" alt="">
+                        <div class="port_p_wrapp">
+                            <p class="port_item_h">Ремонт кухни премиум класса</p>
+                            <p class="port_item_info">Площадь: 25 м2</p>
+                            <p class="port_item_info">Цена: 45 000 грн</p>
+                        </div>
+                    </div>
+                    <div class="portfolio_item">
+                        <img src="img/port2.png" alt="">
+                        <div class="port_p_wrapp">
+                            <p class="port_item_h">Косметический ремонт гостинной</p>
+                            <p class="port_item_info">Площадь: 25 м2</p>
+                            <p class="port_item_info">Цена: 45 000 грн</p>
+                        </div>
+                    </div>
+                    <div class="portfolio_item">
+                        <img src="img/port3.png" alt="">
+                        <div class="port_p_wrapp">
+                            <p class="port_item_h">Капитальный ремонт ванной</p>
+                            <p class="port_item_info">Площадь: 25 м2</p>
+                            <p class="port_item_info">Цена: 45 000 грн</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="reviews_wrapper">
+            <div class="reviews container">
+                <h2 class="h2_border">отзывы</h2>
+                <div class="reviews_slider">
+                    <div class="l_arrow">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="35" height="67" viewBox="0 0 35 67">
+                            <image id="next_copy" data-name="next copy" width="35" height="67" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACMAAABDCAYAAAAWLbwDAAADeElEQVRogc3aW6jOWRjH8S/bebCdwmBIiHI+tcl2yIyQQ1IOySHKIcqNC+WCCylmLkwJF0YpSVGTZNJQhNDe2/lMFDnnNNiMw95GT/3WtFq9Fy54lqfe2vV/d/9P67/Wfz3Ps94i8kU9YD6wG5gAvM0FqQUsAv4B/tPnSC6IjciLCFIN7PeG1ATmAk8jiH3+Bko9ITWAWcCjBHIA6OYJsZgB3Esgh4Du3pBpwJ0EYhO2lzdkMnArgRwH+nlDJgLXE0gZUOINGQdcSSCngCHekNHAhQRyDhjuDRkJnEkgF4FfvCHDgPIEchUY4w2xuXAygdjkHe8NsdVxLIHYcp7kDekPHE4gt4Gp3pDewMEEclevftfood02htwHZntDbJf9K4HYbjzPG9IF2JtAngALvSGdgD8TyDNgsTekg5LnTxHEctilyuDcoh2wU7lqgLwClimndYsfge1AVQR5AywH6npCWgHbgI8RxOqbFap73KIFsAX4EEHeAauAHzwhzYHNunmAGGo10MgT0gTYAPwbQewxrQWKPSF2s/WaFwFiE/c3oKknxIb/V62UALF3yu+aP25hE3INUJm8XTcCLT0hbYCVwOsEshVo7QmxWJe0Jmzi/gH85A2hQEnxXIm1exRpBHpGb1TrFtRUufHKG3NZL7QB2mts47M6uBlQobnkhqlU2VlbxXgdXesDNBao0guD3rB20wZAX8FQ5t9A1755AzDudn5QNdhQoxJAAzVaFVppLhiL92pZFKsMCYlTif6u0ObpgolBzdRZqqUVVqL0slzfccFYvBOohZZ9kSCDdL1cj9UFgyZsmbK9nsIEULVAVV4YtIOXaY/qIUyRQFW6Vv01QV8SbYEdSXUQkvLaX/D/Xz3aA7uSuum1ypUsByIdC1SUL1XI1cgBshJ3T4GdfkkOjEVXYF8CssOJBblA3XUsE4Me52iLhOilU5EY9ACYkwvUT6cjMehejlZaCNvZjxZoMk7JBRoMnEhAN3O0X0OUaouIQTdyNKZDjABOJ6ArOVr2IUYB5wscZvycCzRWlUcMOpurJkNz5dr3cAAWYpJWVfajwRBTCpzeZjk0DTG9wLn2UVUhWWIm8DAB/X/Q7p2hXdQ5Q6kqVZSwdbbHmCNdvKTcZyhQPwK1yYGxR2M9IfvJio2QtWIsZb2f65dFBgojZPPlNLDpM41UQ07G8HIPAAAAAElFTkSuQmCC"/>
+                        </svg>
+                    </div>
+                    <div class="slide_item">
+                        <div class="review_p">
+                            <div class="view_mark">
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="48" height="42" viewBox="0 0 48 42">
+                                    <image id="right-quotation-mark" width="48" height="42" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAqCAYAAAD1T9h6AAAFWklEQVRYhbWZS4gdRRSGv7/TPgiOo0TFB+pCCZgYI0QRBYkuIihm7QONYgwRfER0IYhPUIiIiLoRNIIRUUTRhSK6yMJERHThBCVmXAQfSUgC4nOM48xcqerq7urq6r7dd2b6TnHnVlVXf+fUqb9PdWvf9pvwjpOAlcCJQArMMe1a5H+r/BNziClgEnHAtvt9JfNHUH8mYjliKSKRGNhOfj+vSCRIM4g/SPgO8VvelnrwG4H7gIuKmnb4EOpHxCuIpxvhs76PIO5EnJvBNYPb9iQbx6ubQLyE2CbPgCeBxwrwf0NoN0jJH0LhgJ6ynoXbovBiO+LW/JwofFLxfAhvymrEqxJnI54w3a/pBV/3aPh7A9KWCPyWAt56VhlsWNw1MuPis+MMexxpnTnlni7w+XgV4BC+DJvNiOO9evP/5hKgNd5bwW17afy95uuSIt5j8L7Xo8D+BYqwMYv0PK/tfFc3OnwxS5X2NWYNjBWLNQbf5HHq8F79cYhxr31ctq4nfOK3RY0bS5lmtgpertRG+MrvqEwOXMkB5pAGneCTWFt8Zsy46YLCt81ME3xdJrvCW2PTSsiU/K1Qef+I0lT6jCiTzfC1kMrvA6FMDvX+EPh5LNa+IZX6MlkDjqkOiwdfjJt0n5W0EjJDQkfeTC04fFKHGxpSxgA1ebxdJucXFo0x3bBYW9rTxnBpl8lFi+lO8J7haS/4tplpgp+nTA4zLrUZ/eLLZP5ph4/I5LCZyTYtfeH7L9ZZt/FZwJAi3+lwMKxcBJn8BfF3JJucFzx2GPGeD7ZIGr9fCV9Gssl5wecGvIj4YehiHAXeedlp/KNIv8fHHQ3eGaAjkm5GdlPe17PxmE6iGv8N4hYzG3G4YDEn/s2N0tLguqkb5GvE5YhNwGWIM5xqDDyvD9xiPM09UcgG6SeTHyKuQNwlsYqEUyJeNdeZc3vec4r2mnxn36lX+SviGff/0ohM2oFJ7EblWsTLslvF3tnkTxIPF9epnz/IHrOwLJsxbS3aCMeuGuCXqZZ4PyzxOtIqxIOdQqrZsKmWeN+PZBx6MeLG3IBwTSRxgE7x/qm/66osyAWUScRnlbGDUpuBHkozU2kbMZscAm/KbNFeyxg0SBvghsGbcqqdvzjcf4ijdbj+MilxchQ+W9hH097wZVisbvHsn4hDXbJJP3FsMO4CYv2y34fSeWST61vCwiz0g12ySc+bsXYj2deXwN44Wf/v6yrUbdN9t8SFLZ6dKBd4B/ggxr32h6ycxuFN1a40VIoOIbVWYusQmXx3lHgPZPIOxANZfRTePI7bUZPRFvglEptk7qaJTmiRyW+RPukL78nksWQ3um01eH8s+BixJ22AX2GAXRiYlxDLldhn+ms7yOSzNYmNw5vPCvuQI6sfA9YgbjfPPKPw3nJBPGf4Qhkdc9mpSe5MeJnc55juGq5diLc6wJ/uPLzOtYvaPUlFuOR2eIa8gdhJfpLn+UtJrAfyzkkPeJNLbbT3gOEyeQPiusr5cZmMwe9B3J+3p4FMjscBG+BLmRw4+MkG40KZXFabmWalKc+FvxAbwCae9kgCuJlWeD9PL+HNTWs94oNGeNXkeXoE+J8RV4NN/YsjVKEl1ZBS2wbFlM8RVyI+CpRkWNjV470d/n27XwngCReOshymy7510i3C513e00kmvTCaLYFblWY34gXgtRC8ZoDLJr9CmsjznABgH+ILpJ2IN12+06Y0dcNLA96x78zQWRH4vYBRsx2It4vHPg2HvRN7nj2MuArZbaW5oZhU9h/7gtm+xFbwCGYkeFP2IpmQWGlk2qw9YTc35gX2AeBI5ZymA/gf1aizUCEEzgIAAAAASUVORK5CYII="/>
+                                </svg>
+                            </div>
+                            <p class="rev_name">
+                                Андрей Казимир, 29 лет
+                            </p>
+                            <p class="rev_info">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                                veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                                commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+                                velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat 
+                            </p>
+                            <div class="view_mark_2">
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="48" height="42" viewBox="0 0 48 42">
+                                    <image id="right-quotation-mark" width="48" height="42" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAqCAYAAAD1T9h6AAAFWklEQVRYhbWZS4gdRRSGv7/TPgiOo0TFB+pCCZgYI0QRBYkuIihm7QONYgwRfER0IYhPUIiIiLoRNIIRUUTRhSK6yMJERHThBCVmXAQfSUgC4nOM48xcqerq7urq6r7dd2b6TnHnVlVXf+fUqb9PdWvf9pvwjpOAlcCJQArMMe1a5H+r/BNziClgEnHAtvt9JfNHUH8mYjliKSKRGNhOfj+vSCRIM4g/SPgO8VvelnrwG4H7gIuKmnb4EOpHxCuIpxvhs76PIO5EnJvBNYPb9iQbx6ubQLyE2CbPgCeBxwrwf0NoN0jJH0LhgJ6ynoXbovBiO+LW/JwofFLxfAhvymrEqxJnI54w3a/pBV/3aPh7A9KWCPyWAt56VhlsWNw1MuPis+MMexxpnTnlni7w+XgV4BC+DJvNiOO9evP/5hKgNd5bwW17afy95uuSIt5j8L7Xo8D+BYqwMYv0PK/tfFc3OnwxS5X2NWYNjBWLNQbf5HHq8F79cYhxr31ctq4nfOK3RY0bS5lmtgpertRG+MrvqEwOXMkB5pAGneCTWFt8Zsy46YLCt81ME3xdJrvCW2PTSsiU/K1Qef+I0lT6jCiTzfC1kMrvA6FMDvX+EPh5LNa+IZX6MlkDjqkOiwdfjJt0n5W0EjJDQkfeTC04fFKHGxpSxgA1ebxdJucXFo0x3bBYW9rTxnBpl8lFi+lO8J7haS/4tplpgp+nTA4zLrUZ/eLLZP5ph4/I5LCZyTYtfeH7L9ZZt/FZwJAi3+lwMKxcBJn8BfF3JJucFzx2GPGeD7ZIGr9fCV9Gssl5wecGvIj4YehiHAXeedlp/KNIv8fHHQ3eGaAjkm5GdlPe17PxmE6iGv8N4hYzG3G4YDEn/s2N0tLguqkb5GvE5YhNwGWIM5xqDDyvD9xiPM09UcgG6SeTHyKuQNwlsYqEUyJeNdeZc3vec4r2mnxn36lX+SviGff/0ohM2oFJ7EblWsTLslvF3tnkTxIPF9epnz/IHrOwLJsxbS3aCMeuGuCXqZZ4PyzxOtIqxIOdQqrZsKmWeN+PZBx6MeLG3IBwTSRxgE7x/qm/66osyAWUScRnlbGDUpuBHkozU2kbMZscAm/KbNFeyxg0SBvghsGbcqqdvzjcf4ijdbj+MilxchQ+W9hH097wZVisbvHsn4hDXbJJP3FsMO4CYv2y34fSeWST61vCwiz0g12ySc+bsXYj2deXwN44Wf/v6yrUbdN9t8SFLZ6dKBd4B/ggxr32h6ycxuFN1a40VIoOIbVWYusQmXx3lHgPZPIOxANZfRTePI7bUZPRFvglEptk7qaJTmiRyW+RPukL78nksWQ3um01eH8s+BixJ22AX2GAXRiYlxDLldhn+ms7yOSzNYmNw5vPCvuQI6sfA9YgbjfPPKPw3nJBPGf4Qhkdc9mpSe5MeJnc55juGq5diLc6wJ/uPLzOtYvaPUlFuOR2eIa8gdhJfpLn+UtJrAfyzkkPeJNLbbT3gOEyeQPiusr5cZmMwe9B3J+3p4FMjscBG+BLmRw4+MkG40KZXFabmWalKc+FvxAbwCae9kgCuJlWeD9PL+HNTWs94oNGeNXkeXoE+J8RV4NN/YsjVKEl1ZBS2wbFlM8RVyI+CpRkWNjV470d/n27XwngCReOshymy7510i3C513e00kmvTCaLYFblWY34gXgtRC8ZoDLJr9CmsjznABgH+ILpJ2IN12+06Y0dcNLA96x78zQWRH4vYBRsx2It4vHPg2HvRN7nj2MuArZbaW5oZhU9h/7gtm+xFbwCGYkeFP2IpmQWGlk2qw9YTc35gX2AeBI5ZymA/gf1aizUCEEzgIAAAAASUVORK5CYII="/>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="r_arrow">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="35" height="67" viewBox="0 0 35 67">
+                            <image id="next" width="35" height="67" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACMAAABDCAYAAAAWLbwDAAADbUlEQVRogcWaWYjNcRTHP2aMPbKLQZLse2IsQ5YQSbIlS5G9vHjwQhIPFMUDDx4sD1KUJJIla9YYW/YRkz3LYGwz1k6+t35+3QcPOr9v3e7t93D/n/s75/zOOb9zAcYDR4GHwHygmi2m0kngl17vgHlA5VQwB4EfAVApMDsFUC5QAjQHWmvNzNQXeAlcF6Cr2gGHg92x1wtgGlDJG8bUETgWAT0BpqSAMXWJHPqXzDgpFVAP4EwE9AAYlwqoN3AhAroLjEkF1A+4FAHdAkalAhoIXI2ALNyHpwIaCtyIgIqAwamARgC3I6CLQGEqoNFy4hDonHwricYqzEOg04q+JJoIPIqAjgM9UwFZingcAR0BuqYCmg48jYAOAZ1SAc1Udg+BDqgKSKK5wKsIaB/QJhXQAuBNBLQnKNhclQMsUg2dgfkJ7AZapgCymnkx8CEAstp6J5D/L1+Q+x9hfipnfeNPDZ2nkrU90Bg4D3z0gkE7cRn4HgCZCTsAjZQ+PnnBIJAimalA5stRjV1fQJ+9YJCpimSmAj0nV0B1ZbIvXjCmCgHZzvTR7lTWCV1bO/TVC8ZULh/KU2bPAHUGammHyr1g0K+/ok61t0yXp7aomoAqvGCQw5rJagK9tGZA3fRuncg3LxgU0gZUD+iutSr6bJF33xMGHXpX5MAd5D9V1Dgmu4axQv5t3ALlJADJV2FWPVizBLvfG6QpsDXaEUusy4AmniD2sM0RSBmwEqjhCdIQ2BiBWHSt0eHnJkuO6yMQO3fWKarcZElxrWqdDIglyA1AHU8Q+9WrVVJkQCw1bBKkm8wPVqmUyICUy4EbeILY+bFcD8+AGNQWVXtuqgoslV9kQMxM273PEcu+SxSyYXewA2jmCZKrNqUs6pt2AS08QSqpgXufpaNs5QliWpglA+9N0drOAV5HIJZ923qDzNTkJQQ5qHbEVTOAZxHIYRXZrpqiaUsIckylo6smZLlcPBVU/G6ya9fiCOSs2ldX2YX0vQjEep3+3iAjNE0JQaxlHeQNMiTLEOMaMMwbpFANVwhyExjpDZJt8HVHvuOqbCPBYkWTq7INS0t0vriqqw6weK492Rsk24D9OTDVG2SApiEhyCslQ/e/HsT/ErFCaZbjrdZfOhGAlGpKkgTEHmpFtF1tmUlWANvU5/gK+A0H4kRo1nqgrwAAAABJRU5ErkJggg=="/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <section class="feedback_wrapper">
+            <form action="" class="feedback container">
+                <p class="questions">Остались вопросы?</p>
+                <p class="q2">Оставьте свои контакты<br>
+                                и мы с вами свяжемся</p>
+                <div class="feedback_contacts">
+                    <input type="text" class="feedback_name" placeholder="Имя"> 
+                    <input type="text" class="feedback_email" placeholder="E-mail">
+                </div>
+                <div class="feed_mean">
+                    <textarea type="text" class="feed_text" placeholder="Сообщение"></textarea>
+                    <input class="also_black_butt feed_butt" type="button" class="feed_submit" value="Отправить">
+                </div>
+            </form>
+        </section>
+        <section class="footer_wrapper">
+            <div class="footer_info container">
+                <div class="foot_contacts">
+                    <p class="foot_h">контакты</p>
+                    <p class="foot_p">Адресс: <span>г. Киев, ул. Армянская, 11</span></p>
+                    <p class="foot_p">E-mail: <span><a class="foot_p_email" href="#">yourmail@gmail.com</a></span></p>
+                    <p class="foot_p">Телефон: <span>8 800 800 80 80</span></p>
+                </div>
+                <div class="foot_links">
+                    <p class="foot_h">полезные ссылки</p>
+                    <div class="foot_links_colums">
+                        <div class="foot_links_r">
+                            <a href="#">Главная</a>
+                            <a href="#">О нас</a>
+                            <a href="#">Услуги</a>
+                        </div>
+                        <div class="foot_links_l">
+                            <a href="https://ru.wiktionary.org/wiki/%D1%85%D1%83%D0%B5%D1%81%D0%BE%D1%81">Designer</a>
+                            <a href="#">Портфолио</a>
+                            <a href="#">Контакты</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="foot_social">
+                    <p class="foot_h">мы в соц. сетях</p>
+                    <div class="foot_social_svg">
+                        <a href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="11" height="25" viewBox="0 0 11 25">
+                                <image id="facebook-letter-logo" width="11" height="25" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAZCAYAAADnstS2AAABOUlEQVQ4jY2TPU4EMQyFn6MZoRVwALTcAG3BDWhHdGy3BRWcggYKLkBBSccFEA2n4Ab00EKDZj0PeRWPTDYjsDSKlXx+/slEuq6DGUm0bYuU0mXf90sAxyIyQ7DGIDMRgao+qurK/JolVTUIwzAsRWQVD03IxTbKljorn3uGKWsCcGAqDmf/DcAdgE8Ae004HCU9iOStiDyMNYe0Wsm89kD7GndUde2qvqaUvl1sA5N8BtADOIoN5qArkmckd+3I4NPYWKx5GIYFgEWuHykCca1k4QiXQGVfbM43GbgAMPeArPYkIq/Z/zD4Otd4YnAcFcl7AC/jnEPNs0LV/PnUdf9Z968Gy7+sDG7KzQiXgf8e3ZZyqVgGVuHJBr2p2nVvwZMnFYsvZT+8EF93qjWLyDvJw+J3/RpJAD+pKLbEM10LhwAAAABJRU5ErkJggg=="/>
+                            </svg>
+                        </a>
+                        <a href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="25" height="25" viewBox="0 0 25 25">
+                                <image id="linkedin-logo" width="25" height="25" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAADOklEQVRIiaVWMWsUQRT+3uwsuUu8kHARyUlC0niFcHYnaRRsVFKIhUTtbK3MX7ASbExhoSgW2tpIUIiFBEQhCpHYBIWQFHInAWNCctm7vZsnb51NJpMNGn2wzOybN+9773tvZpfGx8fBzGMALgEI4jierlars8PDw2g0GnClUChgYWEB8/PzyVwpBWNMskZEO3bMjN7eXiwtLWFubg4awEUAzwHkrcGt1dXVy7lcbrrZbO5sFCdbW1vY2NhAGIY4jAjIYyLKC7o4CsNQr6ysPKzX66NE1HSNJeo4jpHL5Q4NMigAqQRBIMNgFEVHADRdKmQUig4ryhgzKxGmjgSQmd8aY36k4DIKuDwu938NwszX8vn8zG82TIeZXxeLxYmhoSEulUro7u7+p+hd0WEY1orF4vlarXaCiFhr/VUWWq0WpPBRFP0/iFBRr9eFki+wxV1bW0O73U4MbI3+6AfAMQCy6XsWyGS73T6dOrN1eK+1nrLzMwBuevu2Adxg5n4ius3MFwCMCgEAPgN4BeAugK0EhIiuaK3H0ha2chzAlKWpAmDCA2kYYx4FQfAMwIijl7NWJaIqM1+N4/isZCaF/5aRfqKzoOtul9lgfiqlXjLziL+WvkdRVO7v758pl8sJl3Cz8OfsHCLR29eSM4e7noo0TqFQqFQqlYmdtkk3uIb28LGvS510Op37SqmxIAjOaa1fpPeYiFAtzdNoNK5rP0r/opPBfZd1uTjL5fI9IppcXFxEX1+fdOGbVqv1CcApNztmPqmyTrDLr0tJGohSKu50OnckUtFtb28nFyeApy7Vds+A9p1kyB7ixSafz68vLy9LG6OnpyehzmZZd2m3Oq33eMsuJHuRJfOurq7kvpc6aK139C7ldjQ6CyAjZXjdRPbZQ6/U27VL/SgPdV9tXGdZNmkA6ZNlq/wM/CxckCxKswLzg9EHGTuAlMHzgaAZQe7SldWyu/v2bzzAdh9YcqCZOetj4eqy+vqgD0yStQekJJOjqcKJeMDZWHBb0zqRKz7wiy3Hxs+amXu0MeYJES3K9W3B5M/lnVOHD0T0QH4q7GUp52PdGLPpUwPgIzM/JKJIvrLMHBLR5i868OZeXwalMgAAAABJRU5ErkJggg=="/>
+                            </svg>
+                        </a>
+                        <a href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="20" viewBox="0 0 32 20">
+                                <image id="behance-logo" width="32" height="20" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAUCAYAAADskT9PAAAElElEQVRIiX1WS2hcVRj+/nPOnUfGjCnJTCEvo124iI+Q1kW1SOODauLWhVSxmI0u3VSooEjpwo0IrgpBELvxBbqoCy0Kom00oiQ1MZiHSAk1izSZmWQyk5l7fvmn56QnN8EDl3vuuf//f//zu5dGR0evE9EhAE1mhiwiat39s9tXjDFLSqmrs7OzF3t7e0sDAwNQSmFzcxNbW1swxohcCsARay0REQf6cqkoimrt7e1Lu1ijo6OcBPX7g5a8j+P4H2PM88VicUprjZ2dHaytrcFaK7oPALh+kK7YZeaStbYAoCFnhojKzJwPo/0f5dY+iqJ7AFypVCr3ArglWRBHnPNVIpoDoJnZhsE1Go0UES0YY1hkRc8kjRPRFICvZCsBA5CUdjDzMDOfEBkXaX5jY+NMHMfvyVkqlUI6nRY7y9baQQ/gVxzHyOfzrbNqtdoq164DoRPM/B0RXQijz2azWFxcFKWJ/v7+8VqtBgd6LOwbAfFgzoEhZi7K61qtdrOvr29GgMvlMsTG5OQkzAGpv9v3gTe6vb2Nrq4uef6w0WiMB06nvJxkxfVIm1LqHIAXmPk+L5vJZLC6urqktf4kk8lcKJVK1UqlcqcEuNOA1bDhZEmTSXoBDLv0+whveHCn201EXwN4OGlDeqRerx8BcK6tre0ZpdQTAEom2fHMfJiIBsL+U0plmflZAG+GzjabzUu+zkSkmPlyCA6gRkTTzGystUdF1jk8TESf5nK5UzQ2NlYCkN/rA3MAJPNMwUu5/k6n02czmcznUkspkdZ6nIgmgjGeIqLTzLzgVB8B8DGA+4OsPKdCwz5iAHIuEakWmwR9IsaVUv9ub29/IxFJbR3oK0E51wEcB7CAO2uKmZ8CUPd9Q0Qvm5B4wuYLV2JM5ToukcVxfFJr/adSqhPAYCCzAkAmIO8CkmUdM64B6HYlHDpoDL9USp0nIuk6iT621kZEdAzA68zc7+SLjUbj0uDg4NGZmZlD5XI5H0WRd1Sc+TUZxAHPBeOBg8iXAfwWCkqXR1H0Yzab/X5zc/OaUIPr6uHZ2dnD9Xq9qrUOS0VJwHB5PGbu2FMCt9oSH6HWCDmqnQawyMwP+nfr6+uDuVzuB5nWOI5Tjju+JaJ3jDFtro+8LSlDjW8DyHTZfWPol593IaJCoYC5uTksLS1hZGSkU3jBZ8cYk15ZWWl2dHRU0ul0pytjrl6v/5TL5fal3RPWLpckUyNfqyQ7eh7v7u5+K47jbi/rOOAvcW5ra2tKaFYAjDGPZjKZlzwly90Bn2Tma8z8CzP/bq39YJcHgrr4j5G6PYGtEnREUfQQET0tMx/0zVUAj7lvwJNa6yuJgN4nosvMXCaixwG8zcx3BVl/bR8RJX9KwnL4M4lczqy1QwCm3V4if7fZbJ6VaUimPrTr9hcBvCo5DFlwF8iVY48z/iyO4xVmPiXg3kGXkTcKhcIZrfUNL+t1gwDE6HkBlwfhgT8AtH7Jko4E+1jSqJRa1lr/PD8/P9HT03NLPtO+qbxOsVj8qFarfcbMLyqlTjSbzX7HpjeJSP6UviCi+VZwAP4DCBPYuFKsipEAAAAASUVORK5CYII="/>
+                            </svg>
+                        </a>
+                        <a href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="26" height="18" viewBox="0 0 26 18">
+                                <image id="youtube-play-button" width="26" height="18" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAASCAYAAABFGc6jAAACBklEQVQ4jX1VPYsUQRB9VdPj3GzgiskeGF+2Yih4icmZLQjmCoZmF11kZGR0BsKFZkbiDzgjE71UNDRbQTbwUNjgdnd6SmrYltqyZwqa7qp+vPromhqazWZomuYIwAtmviMie0QkIoIkRASvq6jNno0QEV2JyBcAzwF8CG3b3mPmc+wKJQJP2CcZh3sA7hLRuYgcBhE5teAhwuQwkeWwPbZTJqKpdZBI7K6lBPDdO9GzLZkrn8VM2UfsI9uC9dFOROQ+Ef20WJtBX4a61FG0ZfFvY8A3mfljURS3mflNrgo+aGOP7GtvlyvVtS35rxDCUwCPRORHzkFO2AJslL6ltd/btkWMEcys+/u2bacAzojot3fmq8Nw3dbXWRaz2WyS/ifG+IyI3g41hp7/a4ack0RSFEWnr9frLitmvk5EZyLyOAVil+UM7sF3HFhgVVW0WCy60k0mE83qIRG9ZuZbuQnhuULuPXyb6l1ZlqvlcqnnGyGEV03TPPH4IYdhaI4lvSxLmc/nl6PR6HA8Hr9brVb7fix53d9pRkVfJknXctV1/bKqqoOyLLs3SgH6QHukCN6S++JjjFTX9QF2Oy47gvqmA4vIN2QezwOH2jc3UVyWX9XRcS6bvrHiyfumvQvuWL+jTwAeiMgFAP1ZdZzbid2tJMmW9u3f8d9u7tV4BeBCRI4AfP4LlEmRrltyP0gAAAAASUVORK5CYII="/>
+                            </svg>
+                        </a>
+                    </div>
+                    <p class="copyright">© Все права защищены 2019</p>
+                </div>
+            </div>
+        </section>
+    </footer>
+</body>
+</html>
